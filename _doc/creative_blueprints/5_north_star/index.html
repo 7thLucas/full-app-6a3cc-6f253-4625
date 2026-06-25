@@ -1,0 +1,61 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col justify-between h-full p-12">
+
+    <!-- Header -->
+    <div>
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
+        <span class="text-xs font-bold tracking-widest text-indigo-500 uppercase">North Star</span>
+      </div>
+      <h2 class="text-4xl font-extrabold text-slate-900 leading-tight">The number that matters</h2>
+      <p class="text-sm text-slate-500 mt-2 max-w-md">Weekly Verified Operations — the single metric this app lives by.</p>
+    </div>
+
+    <!-- Operation definition -->
+    <div class="flex-1 flex flex-col justify-center gap-6">
+
+      <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Verified Operation</p>
+        <h3 class="text-2xl font-bold text-slate-800 mb-2">Greeting served to a visitor</h3>
+        <p class="text-sm text-slate-500 leading-relaxed max-w-lg">
+          A verified operation occurs when a real visitor lands on the page and the greeting
+          <strong class="text-slate-700">"{{config.greeting}}"</strong> is successfully displayed.
+          Page views, direct links, and shared URLs all count.
+        </p>
+      </div>
+
+      <!-- WVO formula (definition-only — no volume data in overview) -->
+      <div class="bg-indigo-50 rounded-2xl p-8 border border-indigo-100">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-bold">Assumption — adjust this</span>
+        </div>
+        <p class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-3">Weekly Verified Operations (WVO) — formula</p>
+        <div class="flex items-center gap-4 flex-wrap">
+          <div class="bg-white rounded-xl px-4 py-3 border border-indigo-100 text-center">
+            <p class="text-xs text-slate-400 mb-1">Visitors / week</p>
+            <p class="text-2xl font-extrabold text-slate-800">?</p>
+          </div>
+          <span class="text-slate-400 text-xl font-light">×</span>
+          <div class="bg-white rounded-xl px-4 py-3 border border-indigo-100 text-center">
+            <p class="text-xs text-slate-400 mb-1">Greeting loads</p>
+            <p class="text-2xl font-extrabold text-slate-800">100%</p>
+          </div>
+          <span class="text-slate-400 text-xl font-light">=</span>
+          <div class="bg-indigo-600 rounded-xl px-4 py-3 text-center">
+            <p class="text-xs text-indigo-200 mb-1">WVO</p>
+            <p class="text-2xl font-extrabold text-white">? / wk</p>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 mt-4 italic">Fill in your expected weekly visitor count to project total greetings served.</p>
+      </div>
+
+    </div>
+
+    <!-- Footer label -->
+    <div class="flex items-center gap-3">
+      <div class="h-px w-8 bg-slate-200"></div>
+      <p class="text-xs text-slate-400 italic">Projected impact — based on your inputs</p>
+    </div>
+
+  </div>
+</section>
